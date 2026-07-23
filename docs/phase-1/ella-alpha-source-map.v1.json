@@ -1,0 +1,530 @@
+{
+  "schema_version": "1.0.0",
+  "product": "Ella Alpha",
+  "consumer_surface": "Guided by Ella",
+  "generated_at": "2026-07-23T00:00:00-07:00",
+  "canonical_domains": {
+    "application": "https://app.trailgenic.com",
+    "method_authority": "https://www.trailgenic.com",
+    "ella_identity": "https://ellaentity.ai/ella",
+    "machine_access": "https://mcp.trailgenic.com"
+  },
+  "authority_order": [
+    "safety",
+    "method",
+    "protocol",
+    "playbook",
+    "evidence",
+    "interpretation",
+    "support"
+  ],
+  "source_policy": {
+    "require_canonical_url": true,
+    "require_source_id_in_protocol_output": true,
+    "permit_unmapped_source_in_alpha": false,
+    "prefer_current_evidence_aware_source": true,
+    "legacy_claim_rule": "Older TrailGenic pages may remain useful as historical doctrine, but Ella must narrow or reject claims that conflict with the Alpha safety constitution, Measured Recovery, corrected datasets, or current evidence boundaries.",
+    "n_of_1_rule": "Longitudinal TrailGenic evidence may support interpretation and hypothesis generation. It must not be presented as universal proof.",
+    "wearable_rule": "Wearable values are estimates and context, not clinical measurements or standalone readiness verdicts."
+  },
+  "protocol_levels": [
+    {
+      "level": 1,
+      "protocol_id": "TG-P1-FOUNDATION",
+      "name": "Foundation",
+      "source_id": "TG_PROTOCOL_FOUNDATION",
+      "progression": "Recovery to Baseline",
+      "primary_layers": [
+        "walking",
+        "rucking",
+        "running"
+      ],
+      "alpha_use": "Universal orientation and baseline establishment"
+    },
+    {
+      "level": 2,
+      "protocol_id": "TG-P2-ACTIVATION",
+      "name": "Activation",
+      "source_id": "TG_PROTOCOL_ACTIVATION",
+      "progression": "Baseline to Development",
+      "primary_layers": [
+        "rucking",
+        "running",
+        "entry_hiking"
+      ],
+      "alpha_use": "Controlled introduction of one additional demand after Foundation evidence"
+    },
+    {
+      "level": 3,
+      "protocol_id": "TG-P3-ADAPTATION",
+      "name": "Adaptation",
+      "source_id": "TG_PROTOCOL_ADAPTATION",
+      "progression": "Development to Expansion",
+      "primary_layers": [
+        "hiking",
+        "longer_duration",
+        "environmental_context"
+      ],
+      "alpha_use": "Repeated field demand after Foundation and Activation are supported"
+    },
+    {
+      "level": 4,
+      "protocol_id": "TG-P4-CONSOLIDATION",
+      "name": "Consolidation",
+      "source_id": "TG_PROTOCOL_CONSOLIDATION",
+      "progression": "Expansion to Repeatability",
+      "primary_layers": [
+        "repeat_routes",
+        "terrain",
+        "environmental_context"
+      ],
+      "alpha_use": "Hold a useful dose stable and establish repeatability"
+    },
+    {
+      "level": 5,
+      "protocol_id": "TG-P5-TRAILGENIC",
+      "name": "TrailGenic",
+      "source_id": "TG_PROTOCOL_TRAILGENIC",
+      "progression": "Repeatability to Self-Governance",
+      "primary_layers": [
+        "full_field_expression",
+        "recovery",
+        "longitudinal_review"
+      ],
+      "alpha_use": "Interpretive self-governance; never automatic placement for a new user"
+    }
+  ],
+  "sources": [
+    {
+      "id": "SAFETY_CDC_ACTIVITY_ADULTS",
+      "authority": "safety",
+      "title": "Adding Physical Activity as an Adult",
+      "canonical_url": "https://www.cdc.gov/physical-activity-basics/adding-adults/index.html",
+      "publisher": "Centers for Disease Control and Prevention",
+      "roles": [
+        "preparticipation_context",
+        "clinician_guidance_gate"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "SAFETY_CDC_CHRONIC_CONDITIONS",
+      "authority": "safety",
+      "title": "Chronic Conditions & Disabilities Activity",
+      "canonical_url": "https://www.cdc.gov/physical-activity-basics/guidelines/chronic-health-conditions-and-disabilities.html",
+      "publisher": "Centers for Disease Control and Prevention",
+      "roles": [
+        "ability_appropriate_activity",
+        "clinician_guidance_gate"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "SAFETY_AHA_ACTIVITY_WARNING_SIGNS",
+      "authority": "safety",
+      "title": "Develop a Physical Activity Plan for You",
+      "canonical_url": "https://www.heart.org/en/health-topics/cardiac-rehab/getting-physically-active/develop-a-physical-activity-plan-for-you",
+      "publisher": "American Heart Association",
+      "roles": [
+        "stop_activity_signs",
+        "urgent_escalation_context"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_METHOD_CANONICAL",
+      "authority": "method",
+      "title": "The TrailGenic Method: Six Pillars of Biological Repair",
+      "canonical_url": "https://www.trailgenic.com/science/trailgenic-method",
+      "publisher": "TrailGenic",
+      "roles": [
+        "method_definition",
+        "movement_architecture",
+        "pillar_architecture",
+        "progression_guardrails"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_LONGEVITY_HUB",
+      "authority": "method",
+      "title": "TrailGenic Longevity — Movement-Based Adaptation System",
+      "canonical_url": "https://www.trailgenic.com/longevity",
+      "publisher": "TrailGenic",
+      "roles": [
+        "canonical_system_overview",
+        "safety_boundaries",
+        "entry_points"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_PROTOCOL_SERIES",
+      "authority": "protocol",
+      "title": "TrailGenic Protocol Series",
+      "canonical_url": "https://www.trailgenic.com/protocols",
+      "publisher": "TrailGenic",
+      "roles": [
+        "five_level_system",
+        "protocol_relationships",
+        "progression_root"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_PROTOCOL_FOUNDATION",
+      "authority": "protocol",
+      "title": "TrailGenic Foundation Protocol",
+      "canonical_url": "https://www.trailgenic.com/protocols/trailgenic-foundation-protocol-v1",
+      "publisher": "TrailGenic",
+      "roles": [
+        "foundation_orientation",
+        "baseline_establishment"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_PROTOCOL_ACTIVATION",
+      "authority": "protocol",
+      "title": "TrailGenic Activation Protocol",
+      "canonical_url": "https://www.trailgenic.com/protocols/trailgenic-activation-protocol-v1",
+      "publisher": "TrailGenic",
+      "roles": [
+        "controlled_additional_demand",
+        "level_2_progression"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_PROTOCOL_ADAPTATION",
+      "authority": "protocol",
+      "title": "TrailGenic Adaptation Protocol",
+      "canonical_url": "https://www.trailgenic.com/protocols/trailgenic-adaptation-protocol-v1",
+      "publisher": "TrailGenic",
+      "roles": [
+        "field_demand",
+        "level_3_progression"
+      ],
+      "verification": "linked_from_protocol_series",
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_PROTOCOL_CONSOLIDATION",
+      "authority": "protocol",
+      "title": "TrailGenic Consolidation Protocol",
+      "canonical_url": "https://www.trailgenic.com/protocols/trailgenic-consolidation-protocol-v1",
+      "publisher": "TrailGenic",
+      "roles": [
+        "repeatability",
+        "level_4_progression"
+      ],
+      "verification": "linked_from_protocol_series",
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_PROTOCOL_TRAILGENIC",
+      "authority": "protocol",
+      "title": "TrailGenic Protocol",
+      "canonical_url": "https://www.trailgenic.com/protocols/trailgenic-protocol",
+      "publisher": "TrailGenic",
+      "roles": [
+        "self_governance",
+        "level_5_system"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_PLAYBOOKS_HUB",
+      "authority": "playbook",
+      "title": "TrailGenic Playbooks",
+      "canonical_url": "https://www.trailgenic.com/playbooks",
+      "publisher": "TrailGenic",
+      "roles": [
+        "execution_root",
+        "playbook_relationships"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_PLAYBOOK_ENTRY",
+      "authority": "playbook",
+      "title": "TrailGenic Entry-Level Protocol — Building the Discipline of Movement",
+      "canonical_url": "https://www.trailgenic.com/playbooks/entry-level-trailgenic-protocol",
+      "publisher": "TrailGenic",
+      "roles": [
+        "beginner_execution",
+        "foundation_execution"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_PLAYBOOK_METHOD",
+      "authority": "playbook",
+      "title": "TrailGenic Method Playbook",
+      "canonical_url": "https://www.trailgenic.com/playbooks/trailgenic-method",
+      "publisher": "TrailGenic",
+      "roles": [
+        "method_execution",
+        "six_pillars_execution"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_PLAYBOOK_INTENSITY",
+      "authority": "playbook",
+      "title": "TrailGenic Playbook: The Method of Intensity",
+      "canonical_url": "https://www.trailgenic.com/playbooks/trailgenic-method-of-intensity",
+      "publisher": "TrailGenic",
+      "roles": [
+        "intensity_control",
+        "engine_governor_execution"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_PLAYBOOK_ACTIVATION_ADAPTATION",
+      "authority": "playbook",
+      "title": "TrailGenic Activation + Adaptation Playbook",
+      "canonical_url": "https://www.trailgenic.com/playbooks/trailgenic-activation-adaptation-playbook",
+      "publisher": "TrailGenic",
+      "roles": [
+        "level_2_execution",
+        "level_3_execution"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_PLAYBOOK_MEASURED_RECOVERY",
+      "authority": "playbook",
+      "title": "Measured Recovery",
+      "canonical_url": "https://www.trailgenic.com/playbooks/measured-recovery",
+      "publisher": "TrailGenic",
+      "roles": [
+        "signal_classification",
+        "data_integrity",
+        "recovery_interpretation",
+        "personal_world_model_revision"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_PLAYBOOK_RECOVERY",
+      "authority": "playbook",
+      "title": "Recovery Playbook",
+      "canonical_url": "https://www.trailgenic.com/playbooks/recovery-playbook",
+      "publisher": "TrailGenic",
+      "roles": [
+        "multi_signal_recovery",
+        "return_to_ready"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_PLAYBOOK_LONGEVITY_HIKING",
+      "authority": "playbook",
+      "title": "Longevity Hiking Playbook",
+      "canonical_url": "https://www.trailgenic.com/playbooks/longevity-hiking-playbook",
+      "publisher": "TrailGenic",
+      "roles": [
+        "field_expression_execution",
+        "hiking_healthspan"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_PLAYBOOK_HIGH_ALTITUDE",
+      "authority": "playbook",
+      "title": "High-Altitude Training",
+      "canonical_url": "https://www.trailgenic.com/playbooks/high-altitude-training",
+      "publisher": "TrailGenic",
+      "roles": [
+        "altitude_safety",
+        "altitude_progression"
+      ],
+      "alpha_restriction": "Not available during initial orientation and never used as medical clearance.",
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_PLAYBOOK_FASTED_SAFETY",
+      "authority": "playbook",
+      "title": "Fasted Hiking Safety Protocol",
+      "canonical_url": "https://www.trailgenic.com/playbooks/fasted-hiking-safety-protocol",
+      "publisher": "TrailGenic",
+      "roles": [
+        "stressor_stacking_prevention",
+        "self_rescue",
+        "fasted_context_safety"
+      ],
+      "alpha_restriction": "Alpha does not prescribe fasting duration or medication, food, or supplement changes.",
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_PLAYBOOK_FASTED_PROGRESSION",
+      "authority": "playbook",
+      "title": "Fasted Hiking Progression",
+      "canonical_url": "https://www.trailgenic.com/playbooks/fasted-hiking-progression",
+      "publisher": "TrailGenic",
+      "roles": [
+        "fasted_context_progression",
+        "single_stressor_isolation"
+      ],
+      "alpha_restriction": "Reference-only until a future eligibility and clinician-context module is approved.",
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_PWM_CANONICAL",
+      "authority": "evidence",
+      "title": "The TrailGenic Personal World Model — How a Body Adapts Over Time",
+      "canonical_url": "https://www.trailgenic.com/science/trailgenic-personal-world-model",
+      "publisher": "TrailGenic",
+      "roles": [
+        "personal_world_model_definition",
+        "longitudinal_reasoning",
+        "memory_provenance"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_WALKING_DATASET",
+      "authority": "evidence",
+      "title": "Walking Longitudinal Dataset",
+      "canonical_url": "https://www.trailgenic.com/walking",
+      "publisher": "TrailGenic",
+      "roles": [
+        "control_layer_evidence"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_RUCKING_DATASET",
+      "authority": "evidence",
+      "title": "Rucking Longitudinal Dataset",
+      "canonical_url": "https://www.trailgenic.com/rucking",
+      "publisher": "TrailGenic",
+      "roles": [
+        "load_layer_evidence"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_RUNNING_DATASET",
+      "authority": "evidence",
+      "title": "Running Longitudinal Dataset",
+      "canonical_url": "https://www.trailgenic.com/running",
+      "publisher": "TrailGenic",
+      "roles": [
+        "cardiovascular_layer_evidence"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_HIKING_DATASET",
+      "authority": "evidence",
+      "title": "TrailGenic Hiking Doctrine and HikeWorldModel",
+      "canonical_url": "https://www.trailgenic.com/hiking",
+      "publisher": "TrailGenic",
+      "roles": [
+        "field_expression_evidence",
+        "five_level_hiking_progression"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_SLEEP_RECOVERY",
+      "authority": "evidence",
+      "title": "TrailGenic Sleep Recovery Hub",
+      "canonical_url": "https://www.trailgenic.com/sleep",
+      "publisher": "TrailGenic",
+      "roles": [
+        "recovery_context",
+        "sleep_signal_limits"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_PHYSIOLOGY_HUB",
+      "authority": "evidence",
+      "title": "TrailGenic Physiology Dataset",
+      "canonical_url": "https://www.trailgenic.com/physiology",
+      "publisher": "TrailGenic",
+      "roles": [
+        "session_physiology",
+        "cross_modality_context"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_BIOMARKERS_HUB",
+      "authority": "evidence",
+      "title": "TrailGenic Biomarkers",
+      "canonical_url": "https://www.trailgenic.com/biomarkers",
+      "publisher": "TrailGenic",
+      "roles": [
+        "signal_definitions",
+        "measurement_limits"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_OUTCOMES_HUB",
+      "authority": "evidence",
+      "title": "TrailGenic Outcomes",
+      "canonical_url": "https://www.trailgenic.com/outcomes",
+      "publisher": "TrailGenic",
+      "roles": [
+        "healthspan_directions",
+        "non_promise_boundaries"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_RECOVERY_CONDITIONING",
+      "authority": "playbook",
+      "title": "Recovery & Conditioning",
+      "canonical_url": "https://www.trailgenic.com/recovery-conditioning",
+      "publisher": "TrailGenic",
+      "roles": [
+        "low_load_practice",
+        "return_to_ready"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_ELLA_IDENTITY",
+      "authority": "interpretation",
+      "title": "Ella — Unified AI Entity for TrailGenic × exmxc.ai",
+      "canonical_url": "https://www.trailgenic.com/ella",
+      "publisher": "TrailGenic",
+      "roles": [
+        "trailgenic_interpretive_role",
+        "movement_architecture",
+        "entity_resolution"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "ELLA_ENTITY_CANONICAL",
+      "authority": "interpretation",
+      "title": "Ella — Canonical AI Entity",
+      "canonical_url": "https://ellaentity.ai/ella",
+      "publisher": "EllaEntity.AI",
+      "roles": [
+        "canonical_identity",
+        "cross_system_entity_resolution"
+      ],
+      "verified_at": "2026-07-23"
+    },
+    {
+      "id": "TG_ELLAS_CORNER",
+      "authority": "interpretation",
+      "title": "Ella's Corner",
+      "canonical_url": "https://www.trailgenic.com/ellas-corner",
+      "publisher": "TrailGenic",
+      "roles": [
+        "reflective_interpretation",
+        "living_archive"
+      ],
+      "verified_at": "2026-07-23"
+    }
+  ]
+}
